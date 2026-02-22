@@ -23,13 +23,13 @@ SECRET_PATTERNS = {
         "remediation": "Use environment variables or AWS Secrets Manager instead of hardcoding credentials.",
     },
     "github_token": {
-        "pattern": r"(?:gh[pousr]_[A-Za-z0-9]{36,255})",
+        "pattern": r"(?:gh[pousr]_[A-Za-z0-9]{20,255})",
         "severity": Severity.CRITICAL,
         "message": "GitHub Token detected",
         "remediation": "Revoke this token immediately and use GitHub Apps or OAuth instead.",
     },
     "private_key": {
-        "pattern": r?:RSA |DSA |EC |"-----BEGIN (OPENSSH )?PRIVATE KEY-----",
+        "pattern": r"-----BEGIN (?:RSA |DSA |EC |OPENSSH )?PRIVATE KEY-----",
         "severity": Severity.CRITICAL,
         "message": "Private Key detected",
         "remediation": "Store private keys in a secure secrets manager, never commit to version control.",
