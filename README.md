@@ -1,5 +1,12 @@
 # code-security-scanner
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/code-security-scanner/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/code-security-scanner/actions)
+![License](https://img.shields.io/github/license/yksanjo/code-security-scanner)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/code-security-scanner)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/code-security-scanner)
+
 ## Detailed Description
 
 code-security-scanner is maintained as an industry-grade software project with production-ready engineering practices.  
